@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/authors"
+
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/country"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authors">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Country" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/clickme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply filter"
+        android:padding="12dp"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:background="@drawable/button_background"
+        android:layout_below="@+id/country"/>
+
+    <TextView
+        android:id="@+id/display_op"
+        android:layout_width="304dp"
+        android:layout_height="288dp"
+        android:layout_below="@+id/clickme"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="234dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>
+
+
